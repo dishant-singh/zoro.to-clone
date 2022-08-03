@@ -9,8 +9,7 @@
     justify-content: center;  
     align-items: center;  
     flex-direction: column;
-    /*background-image: url(https://zoro.to/images/zoro-bg.jpg);
-    background-repeat: no-repeat;*/
+  
 
 }
 
@@ -36,6 +35,7 @@ nav ul{
     display: flex;
     border: 1px solid green;
     padding-left: 0;
+    position: sticky;
 }
 
 nav ul li{
@@ -49,15 +49,15 @@ main{
     display: block;
     border: 1px solid aliceblue;
     width: 1170px;
-
     height: 100%;
 }
 .bgImage{
-    object-fit:;
+    background-image: url(https://zoro.to/images/zoro-bg.jpg);
+    background-repeat: no-repeat;
+   
 
 }
 .zoro{
-    position: fixed;
     display: block;
     margin-left: 600px;
     height: 425px;
@@ -65,21 +65,24 @@ main{
     margin-top: -20px;
 }
 .logo{
+    position: absolute;
     border: 1px solid orange;
-    margin-top: 100px;
     height: 60px;
+    margin-top: -300px;
 }
 .search input{
+    position: absolute;
     border: 1px solid gold;
     height: 45px;
     width: 500px; 
     border-radius: 50px;
-    margin-top: 50px;
+    margin-top: -225px;
 }
 
 .topSearch{
+    position: absolute;
     border: 1px solid blue;
-    margin-top: 20px;
+    margin-top: -150px;
     display: flex;
     width: fit-content;
 }
