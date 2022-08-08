@@ -1,109 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
-.container{
-    margin: auto;
-    border: 1px solid white;
-    left: 0;
-    display: flex;
-    justify-content: center;  
-    align-items: center;  
-    flex-direction: column;
-    background: linear-gradient(
-        rgba(23, 23, 23,1),
-        rgba(23, 23, 23,0.6),
-        transparent
-    );
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background: #202125;
-    color: white;
+    background: rgb(32, 33, 37);
+    color: white; 
     font-family: 'Montserrat', sans-serif;
-    margin-left: 0;
-    margin-right: 0;
+}
+.top-gradient{
+    height: 495px;
+    background: linear-gradient( rgba(32, 33, 37,1), rgba(32, 33, 37,0.8), transparent );
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
+.container{
+    margin: auto;
+    max-width: 1170px;
+    z-index: 3 !important;
+    position: relative;
+}
 
 nav{
-    width: 1170px;
-    border: 1px solid red;
+    margin-top: 80px;
 }
-.headBlock{
-    display: block;
-    justify-content: center;
-    height: 50px;
-    border: 1px solid blue;
-}
+
+
 nav ul{
     list-style: none;
     display: flex;
-    border: 1px solid green;
     padding-left: 0;
     position: sticky;
+    cursor: pointer;
 }
 
 nav ul li{
     margin-right: 30px;
     padding: 10px;
     padding-left: 0;
-    border: 1px solid purple;
 }
 
 main{
-    display: block;
-    border: 1px solid aliceblue;
-    width: 1170px;
-    height: 100%;
-}
-.bgImage{
+    display: flex;
+    height: 467px;
+    align-items: flex-end;
     position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.bgImage{
+    position: fixed;
     display: block;
-    justify-content: contain;
     width: 100%;
-    height: 420px;
+    height: 456px;
     left: 0px;
     right: 0px;
-    z-index: -1;
-    margin-top: -420px;
+    z-index: 1;
+    top: 130px;
+    object-fit: cover;
+}
 
+.left{
+    width: 1317px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.zoro{
-    display: block;
-    margin-left: 600px;
-    height: 425px;
-    border: 1px solid aqua;
-    margin-top: -20px;
-}
+
 .logo{
-    position: absolute;
-    border: 1px solid orange;
     height: 60px;
-    margin-top: -300px;
+    width: auto;
+    margin-bottom: 30px;
 }
-.search input{
-    position: absolute;
-    border: 1px solid gold;
-    height: 45px;
-    width: 500px; 
-    border-radius: 50px;
-    margin-top: -225px;
+.search{
+    height: 50px;
+    width: 100%;
+    font-weight: 400;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    border: none !important;
+    margin-bottom: 30px;
 }
 
 .topSearch{
-    position: absolute;
-    border: 1px solid blue;
-    margin-top: -150px;
-    display: flex;
-    width: fit-content;
+
 }
 .topSearch p{
-    border: 1px solid green;
-    text-size-adjust: 10px;
-    color: gray;
-    width: 500px;
+
+}
+
+.right {
+    width: 100%;
+}
+
+.zoro{
+    display: block;
+    width: 100%;
 }
 
 
