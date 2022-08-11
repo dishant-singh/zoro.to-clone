@@ -23,6 +23,7 @@ body{
 }
 
 .container{
+    display: block;
     margin: auto;
     max-width: 1170px;
     z-index: 3 !important;
@@ -84,13 +85,13 @@ main{
 }
 
 .search{
-    border: 1px solid aqua;
+    justify-content: space-evenly;
     width: 100%;
     display: flex;
 }
 .searchBar{
     height: 50px;
-    width: 90%;
+    width: 91%;
     font-weight: 400;
     border-radius: 30px;
     padding-left: 20px;
@@ -100,10 +101,19 @@ main{
     margin-bottom: 30px;
 }
 .icon{
-    border: 1px solid red;
-    width: 10%;
+    background-color: #cbe963;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%;
     height: 50px;
+    margin: 0 10px;
 }
+
 
 .topSearch{
 
@@ -120,5 +130,66 @@ main{
     display: block;
     width: 100%;
 }
+.viewSite{
+    background-color: #cbe963;
+    color: black;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 467px;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 13px;
+}
+.viewSite h2{
+    cursor: pointer;
+}
 
+.viewSite i{
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.shareZoro{
+    padding: 20px 30px ;
+    margin-top: 60px;
+    border-radius: 10px;
+    color: #cbe963;
+    background-color: #131314;
+    
+}
+.discription{
+    display: flex;
 
+    margin-top: 50px;
+}
+
+.discriptionL{
+
+    width: 100%;
+}
+.discriptionL h2{
+    margin-bottom: 20px;
+}
+.discriptionL p{
+   margin-bottom: 20px;
+   font-weight: normal;
+   color: gray;
+   font-size: 14px;
+}
+.discriptionR{
+    width: 60%;
+    padding: 0 20px;
+}
+
+.drblock{
+    background-color: #2b2c30;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
