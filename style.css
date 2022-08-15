@@ -28,6 +28,9 @@ body{
     max-width: 1170px;
     z-index: 3 !important;
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
 }
 
 nav{
@@ -56,6 +59,8 @@ main{
     position: absolute;
     left: 0;
     right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .bgImage{
@@ -91,7 +96,7 @@ main{
 }
 .searchBar{
     height: 50px;
-    width: 91%;
+    width: calc(100% - 50px);
     font-weight: 400;
     border-radius: 30px;
     padding-left: 20px;
@@ -109,7 +114,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 9%;
+    width: 53px;
     height: 50px;
     margin: 0 10px;
 }
@@ -192,4 +197,35 @@ main{
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px 20px;
+}
+
+.empty-zoro{
+    visibility: hidden;
+}
+
+
+@media (max-width: 1240px) {
+    .container{
+        object-fit:fill;
+    }
+
+    nav {
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .zoro {
+        display: none;
+    }
+    .discription {
+        flex-direction: column;
+    }
 }
